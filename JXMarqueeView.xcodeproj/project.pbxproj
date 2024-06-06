@@ -26,6 +26,7 @@
 		19F167122099692900C2C03F /* reverse.gif in Resources */ = {isa = PBXBuildFile; fileRef = 19F1670D2099692900C2C03F /* reverse.gif */; };
 		19F167132099692900C2C03F /* right.gif in Resources */ = {isa = PBXBuildFile; fileRef = 19F1670E2099692900C2C03F /* right.gif */; };
 		19F167142099692900C2C03F /* picture.gif in Resources */ = {isa = PBXBuildFile; fileRef = 19F1670F2099692900C2C03F /* picture.gif */; };
+		FFAA1F0075C59EF0479AF10E /* Pods_JXMarqueeView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FB5A7B196BAFC2FA6F3A06 /* Pods_JXMarqueeView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,9 @@
 		19F1670D2099692900C2C03F /* reverse.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = reverse.gif; sourceTree = "<group>"; };
 		19F1670E2099692900C2C03F /* right.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = right.gif; sourceTree = "<group>"; };
 		19F1670F2099692900C2C03F /* picture.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = picture.gif; sourceTree = "<group>"; };
+		22FB5A7B196BAFC2FA6F3A06 /* Pods_JXMarqueeView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXMarqueeView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A2DACDAFE17C65998694856 /* Pods-JXMarqueeView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXMarqueeView.debug.xcconfig"; path = "Target Support Files/Pods-JXMarqueeView/Pods-JXMarqueeView.debug.xcconfig"; sourceTree = "<group>"; };
+		C70EBF46EF11358B05C59869 /* Pods-JXMarqueeView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXMarqueeView.release.xcconfig"; path = "Target Support Files/Pods-JXMarqueeView/Pods-JXMarqueeView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFAA1F0075C59EF0479AF10E /* Pods_JXMarqueeView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EA1F185B918FEC57D04CA07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A2DACDAFE17C65998694856 /* Pods-JXMarqueeView.debug.xcconfig */,
+				C70EBF46EF11358B05C59869 /* Pods-JXMarqueeView.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		192AD15C212FD16C0031AD46 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +91,8 @@
 			children = (
 				19F166E620968DC000C2C03F /* JXMarqueeView */,
 				19F166E520968DC000C2C03F /* Products */,
+				0EA1F185B918FEC57D04CA07 /* Pods */,
+				A6228627BD1BD6283504275D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +139,14 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		A6228627BD1BD6283504275D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22FB5A7B196BAFC2FA6F3A06 /* Pods_JXMarqueeView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19F166F620968DC100C2C03F /* Build configuration list for PBXNativeTarget "JXMarqueeView" */;
 			buildPhases = (
+				B40F2B27C35000CB2C37CF38 /* [CP] Check Pods Manifest.lock */,
 				19F166E020968DC000C2C03F /* Sources */,
 				19F166E120968DC000C2C03F /* Frameworks */,
 				19F166E220968DC000C2C03F /* Resources */,
+				5DCBE6DA89FB28757964E4C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DCBE6DA89FB28757964E4C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JXMarqueeView/Pods-JXMarqueeView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JXMarqueeView/Pods-JXMarqueeView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JXMarqueeView/Pods-JXMarqueeView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B40F2B27C35000CB2C37CF38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JXMarqueeView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		19F166E020968DC000C2C03F /* Sources */ = {
@@ -350,6 +419,7 @@
 		};
 		19F166F720968DC100C2C03F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A2DACDAFE17C65998694856 /* Pods-JXMarqueeView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -370,6 +440,7 @@
 		};
 		19F166F820968DC100C2C03F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C70EBF46EF11358B05C59869 /* Pods-JXMarqueeView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

@@ -1,0 +1,6 @@
+framework module Pods_JXMarqueeView {
+  umbrella header "Pods-JXMarqueeView-umbrella.h"
+
+  export *
+  module * { export * }
+}
